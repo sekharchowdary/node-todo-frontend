@@ -4,11 +4,11 @@ node {
 
     env.AWS_ECR_LOGIN=true
     def newApp
-    def registry = 'kudosdevops/nodejs-sample-project'
+    def registry = 'sekhar09/nodejs-kudos'
     def registryCredential = 'dockerhub'
 	
 	stage('Git') {
-		git 'https://github.com/gustavoapolinario/node-todo-frontend'
+		git 'https://github.com/sekharchowdary/node-todo-frontend.git'
 	}
 	stage('Build') {
 		sh 'npm install'
